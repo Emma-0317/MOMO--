@@ -1,0 +1,360 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,a,li{
+    font-family: "Microsoft JhengHei", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+header{
+    display: flex;
+    height: 28px;
+    background-color:#ececec;
+    padding: 6px 30px 6px 55px;
+    position: sticky;
+    top: 0px;
+}
+header ul{
+    display: flex;
+    font-size: 13px;
+    padding: 6px 0;
+    font-weight: 500;
+}
+header a{
+    color: #000000;
+    margin: 0 1px;
+    padding: 40px 0;
+}
+header a:hover,img:hover{
+    color:#e40580;
+}
+header li+li::before{
+    content: "|";
+    margin:0 8px;
+    color: #000000;
+}
+header .list-2{
+    padding-left: 260px;
+}
+.list li{
+    margin: auto;
+    margin-left: 8px;
+}
+header button{
+    background-color: #fff;
+    height: 22px;
+    border-radius: 4px;
+    width: 48px;
+    border: 1px #aaa solid;
+    font-size: 10px;
+    margin: 4px 0 3px 15px;
+}
+header button:hover{
+    background-color: #e40580;
+}
+header button a:hover{
+    color: #fff;
+}
+nav{
+    display: flex;
+    height: 142px;
+    padding: 14px 25px 0 30px;
+}
+nav .search{
+    display: flex;
+    margin:0 0 10px 5px;
+    border:  #515151 solid 2px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius:30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+nav .search a{
+    color: white;
+    display: inline-block;
+    background-color: #515151;
+    padding: 6px 32px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .search p{
+    font-size: 12px;
+    color: #666666;
+    display: flex;
+    padding: 8px 215px 8px 8px;
+
+}
+nav .popular ul{
+    display: flex;
+    font-size: 12px;
+    color: #e40580;
+    margin-left: 10px;
+}
+nav li a{
+    color: #e40580;
+    padding: 0 9px;
+}
+nav li a:hover{
+    color: rgb(39, 87, 245);
+}
+nav li+li::after{
+    content: "|";
+}
+nav .inquire{
+    margin: 40px 50px 17px 70px;
+}
+nav .popular p{
+    margin-right: 80px;
+}
+nav .advertise{
+    display: flex;
+    margin: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top .tag{
+    margin-right: 32px;
+}
+.tag a{
+    background-color: #e9623d;
+    margin: 0 1px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 800;
+    padding: 7px 16px;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px ;
+}
+.top .label{
+    display: flex;
+    background-color: #515151;
+    width: 200px;
+    height: 36px;
+    margin:-10px 18px 0 18px;
+    position: relative;
+}
+.top .label p{
+    margin-left: 12px;
+    color: #fff;
+    display: flex;
+    margin: auto;
+    font-size: 15px;
+    font-size: 600;
+}
+.btn{
+    width: 23px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-left: 18px;
+}
+.btn::before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+}
+.btn::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color:#fff;
+    position: absolute;
+    bottom: -6px;
+}
+main{
+    background-color: #e2a8a7;
+    height: 370px;
+    display: flex;
+}
+.classify{
+    height: 500px;
+    width: 200px;
+    background-color: #515151;
+    margin-left: 18px;
+}
+.classify a{
+    color: #fff;
+    font-size: 14px;
+}
+.classify li{
+    padding: 2px 0;
+}
+.classify .menu{
+    margin: 0 10px 0 20px;
+    padding: 12px 0 10px 0;
+    border-bottom: #aaa solid 1px;
+}
+.classify li:hover{
+    background-color: #e40580;
+}
+.today{
+    padding: 10px 0;
+}
+.today .title{
+    display: flex;
+    background-color: #ececec;
+    justify-content: space-between;
+    width: 200px;
+    height: 35px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px ;
+}
+.title ul{
+    display: flex;
+    margin: 10px 10px 10px 0;
+}
+.today .title li{
+    background-color: #c2bfbf;
+    width: 15px;
+    height: 15px;
+    margin: 2px 3px;
+    font-size: 12px;
+}
+.today .title a{
+    color: #fff;
+    margin-left: 4px;
+}
+.today .title li:hover{
+    background-color: #e40580;
+}
+.title h5{
+    font-size: 17px;
+    font-weight: 700;
+    margin: 8px 8px;
+}
+.spike{
+    background-color: #fff;
+    width: 200px;
+    height: 312px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px ;
+}
+.spike .block{
+    height: 100px;
+    width: 180px;
+    border-bottom: #dfdcdc solid 1px;
+}
+section{
+    display: flex;
+    justify-content: end;
+    margin:10px 20px 0 0 ;
+}
+section .buy{
+    width: 268px;
+    height: 120px;
+    background-color: #f2f2f2;
+    margin-left: 10px;
+}
+section h4{
+    font-size: 16px;
+    color: #fff;
+    background-color: #b8b8b8;
+    height: 20px;
+    display: flex;
+    padding: 6px 0;
+
+}
+section .procure{
+    display: flex;
+}
+section .procure .pic{
+    margin: 6px 10px;
+}
+section .procure .text{
+    padding: 15px 0;
+}
+section .procure .text p{
+    font-size: 13px;
+    color: #666666;
+}
+section .procure .text span{
+    color: #e40580;
+    font-size:17px ;
+}
+section h6{
+    background-color: #fff;
+    color: #e40580;
+    border: #e40580 solid 1px;
+    height: 12px;
+    width: 52px;
+    padding: 0 4px 4px 4px;
+}
+.introduce{
+    height: 420px;
+    width: 1200px;
+    display: flex;
+    padding: 6px 20px 0 15px;
+    margin: 0;
+}
+.introduce img{
+    display:block;
+    /* 解決空白 */
+}
+.introduce .picture1{
+    height: 420px;
+    width: 230px;
+}
+.introduce .picture2{
+    height: 420px;
+    width: 230px;
+}
+.introduce .picture3{
+    height: 464px;
+    width: 322px;
+}
+.introduce .picture4{
+    height: 420px;
+    width: 205px;
+}
+.introduce .picture5{
+    height: 420px;
+    width: 245px;
+}
+.venue .meet{
+    display: flex;
+    margin: auto;
+    padding-left: 380px;
+}
+.venue .sort1{
+    display: flex;
+    height: 125px;
+    width: 200px;
+    padding-left: 25px;
+}
+.venue .sort2{
+    display: flex;
+    height: 125px;
+    width: 200px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+aside{
+    display: flex;
+    padding-left: 25px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    height: 57px;
+    background-color: #ffd632;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.heading .til{
+    display: flex;
+    padding: 18px 20px;
+}
