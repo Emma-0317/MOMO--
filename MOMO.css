@@ -358,3 +358,54 @@ aside{
     display: flex;
     padding: 18px 20px;
 }
+.heading .reciprocal{
+    display: flex;
+    margin-top: 18px;
+}
+.heading .reciprocal h5{
+    margin: 4px 5px;
+}
+.heading .reciprocal p{
+    background-color: #000000;
+    color: #fff;
+    margin: 2px;
+    padding: 2px;
+    height: 22px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.heading .sessions{
+    margin: 16px 5px;
+}
+.heading .sessions ul{
+    display: flex;
+}
+.heading .sessions li{
+    background-color: #fff;
+    margin: 2px;
+    padding: 4px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.heading .sessions a{
+    color: orangered;
+    margin: 3px;
+    font-size: 15px;
+}
+.heading .sessions li:hover{
+    background-color: orangered;
+}
+.heading .sessions a:hover{
+    color: #fff;
+}
+.prod{
+    width: 550px;
+    height: 517px;
+    background-color: #f2f2f2;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
